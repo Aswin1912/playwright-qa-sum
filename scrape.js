@@ -1,16 +1,16 @@
 const { chromium } = require('playwright');
 
 const seeds = [
-  "SEED_9_URL",
-  "SEED_10_URL",
-  "SEED_11_URL",
-  "SEED_12_URL",
-  "SEED_13_URL",
-  "SEED_14_URL",
-  "SEED_15_URL",
-  "SEED_16_URL",
-  "SEED_17_URL",
-  "SEED_18_URL"
+  "https://<real-domain>/seed9",
+  "https://<real-domain>/seed10",
+  "https://<real-domain>/seed11",
+  "https://<real-domain>/seed12",
+  "https://<real-domain>/seed13",
+  "https://<real-domain>/seed14",
+  "https://<real-domain>/seed15",
+  "https://<real-domain>/seed16",
+  "https://<real-domain>/seed17",
+  "https://<real-domain>/seed18"
 ];
 
 (async () => {
