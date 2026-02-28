@@ -20,8 +20,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
+      # ✅ SAFE Playwright browser install (no permission issue)
+      - name: Install Chromium for Playwright
+        run: |
+          npx --yes playwright install chromium
+          npx --yes playwright install-deps chromium
 
       - name: Run Playwright QA — 23f2000230@ds.study.iitm.ac.in
         run: node scrape.js
